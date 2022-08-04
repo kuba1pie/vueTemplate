@@ -11,7 +11,7 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: ["vue", "vue-router"],
+      imports: ["vue", "vue-router", "@vueuse/head"],
       dts: "src/auto-imports.d.ts",
       dirs: ["src/composables", "src/store"],
       vueTemplate: true,
@@ -26,9 +26,7 @@ export default defineConfig({
       dts: "src/components.d.ts",
     }),
     Pages({
-      dirs: [
-        { dir: "src/pages", baseRoute: "" },
-      ],
+      dirs: [{ dir: "src/pages", baseRoute: "" }],
     }),
   ],
 });
