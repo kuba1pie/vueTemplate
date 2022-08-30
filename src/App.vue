@@ -11,4 +11,3 @@ useHead({
 <template>
   <RouterView />
 </template>
-s
