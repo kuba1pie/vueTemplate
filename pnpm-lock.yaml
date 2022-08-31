@@ -8,7 +8,6 @@ specifiers:
   "@vueuse/head": ^0.7.9
   eslint: ^8.21.0
   eslint-config-prettier: ^8.5.0
-  eslint-plugin-prettier: ^4.2.1
   eslint-plugin-vue: ^9.3.0
   husky: ^8.0.1
   lint-staged: ^13.0.3
@@ -40,7 +39,6 @@ devDependencies:
   "@vue/test-utils": 2.0.2_vue@3.2.37
   "@vue/tsconfig": 0.1.3
   eslint: 8.21.0
-  eslint-plugin-prettier: 4.2.1_h62lvancfh4b7r6zn2dgodrh5e
   eslint-plugin-vue: 9.3.0_eslint@8.21.0
   husky: 8.0.1
   lint-staged: 13.0.3
@@ -1305,26 +1303,7 @@ packages:
       eslint: ">=7.0.0"
     dependencies:
       eslint: 8.21.0
-
-  /eslint-plugin-prettier/4.2.1_h62lvancfh4b7r6zn2dgodrh5e:
-    resolution:
-      {
-        integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==,
-      }
-    engines: { node: ">=12.0.0" }
-    peerDependencies:
-      eslint: ">=7.28.0"
-      eslint-config-prettier: "*"
-      prettier: ">=2.0.0"
-    peerDependenciesMeta:
-      eslint-config-prettier:
-        optional: true
-    dependencies:
-      eslint: 8.21.0
-      eslint-config-prettier: 8.5.0_eslint@8.21.0
-      prettier: 2.7.1
-      prettier-linter-helpers: 1.0.0
-    dev: true
+    dev: false
 
   /eslint-plugin-vue/9.3.0_eslint@8.21.0:
     resolution:
@@ -1535,13 +1514,6 @@ packages:
       {
         integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==,
       }
-
-  /fast-diff/1.2.0:
-    resolution:
-      {
-        integrity: sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==,
-      }
-    dev: true
 
   /fast-glob/3.2.11:
     resolution:
@@ -2705,16 +2677,6 @@ packages:
       }
     engines: { node: ">= 0.8.0" }
 
-  /prettier-linter-helpers/1.0.0:
-    resolution:
-      {
-        integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==,
-      }
-    engines: { node: ">=6.0.0" }
-    dependencies:
-      fast-diff: 1.2.0
-    dev: true
-
   /prettier/2.7.1:
     resolution:
       {
@@ -2722,6 +2684,7 @@ packages:
       }
     engines: { node: ">=10.13.0" }
     hasBin: true
+    dev: false
 
   /punycode/2.1.1:
     resolution:
