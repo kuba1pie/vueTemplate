@@ -12,6 +12,7 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
     "types": ["vite-plugin-pages/client"]
   },
   "include": [
@@ -19,14 +20,10 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "public"
+    "public",
+    "vite.config.ts"
   ],
   "exclude": ["dist", "node_modules"],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ],
-  "formatOnSave": true,
-  "extends": "@vue/tsconfig/tsconfig.web.json"
+  "types": ["vitest", "vite/client", "vite-plugin-pages/client"],
+  "formatOnSave": true
 }
