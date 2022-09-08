@@ -1,12 +1,7 @@
-import { defineStore } from "pinia";
-interface Person {
-  name: string;
-  surname: string;
-  result: boolean;
-}
+import { defineStore } from 'pinia'
 
-export const useDefaultStore = defineStore("defaultStore", {
+export const useDefaultStore = defineStore('defaultStore', {
   state: () => ({
     data: [],
   }),
-});
+})
